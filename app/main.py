@@ -16,7 +16,7 @@ app = FastAPI()
 # ⚡ Add CORS middleware AFTER app creation
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # allow all origins for development
+    allow_origins=["https://aes-image-messenger-frontend.vercel.app"],  # <-- explicitly your frontend
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
